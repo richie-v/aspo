@@ -1,0 +1,26 @@
+div#loginframe {
+	width:			450px;
+	margin:			70px auto;
+	padding:		0px 30px 30px 30px;
+	border:			1px solid black;
+}
+
+div.logintext {
+	padding:		2px;
+}
+
+div.loginerror { 
+	padding:			5px;
+	color:				red;
+	border:				1px solid red;
+	background-color:	#fee;
+	margin-bottom:		10px;
+}
+
+div.loginfield {
+	margin-bottom: 15px;
+}
+
+div.loginlink {
+	margin-bottom: 15px;
+}

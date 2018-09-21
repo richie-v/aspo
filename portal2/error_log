@@ -1,0 +1,38 @@
+[19-Oct-2017 17:53:49 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 79
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:53:57 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 79
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:54:52 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:54:54 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:54:59 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:59:25 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:59:28 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:59:48 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:59:50 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 17:59:54 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 18:00:09 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 18:00:11 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 18:00:33 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 18:00:35 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 18:00:41 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[19-Oct-2017 18:00:47 UTC] PHP Warning:  syntax error, unexpected $end, expecting TC_DOLLAR_CURLY or TC_QUOTED_STRING or '"' in settings.php on line 80
+ in /home/aspo/public_html/portal2/includes/config.class.php on line 14
+[14-Mar-2018 03:29:21 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php55/root/usr/lib64/php/modules/curl.so' - libnghttp2.so.14: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Mar-2018 03:29:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php55/root/usr/lib64/php/modules/curl.so' - libnghttp2.so.14: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Mar-2018 09:41:21 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php55/root/usr/lib64/php/modules/curl.so' - libnghttp2.so.14: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Mar-2018 09:41:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php55/root/usr/lib64/php/modules/curl.so' - libnghttp2.so.14: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Mar-2018 18:39:08 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php55/root/usr/lib64/php/modules/curl.so' - libnghttp2.so.14: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Mar-2018 18:39:11 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php55/root/usr/lib64/php/modules/curl.so' - libnghttp2.so.14: cannot open shared object file: No such file or directory in Unknown on line 0

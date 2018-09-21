@@ -1,0 +1,106 @@
+div.infobox {
+	border: 		1px solid black;
+	padding: 		30px;
+	background: 	#eee;
+}
+
+div.col3 {
+	width:			30%;
+	float:			left;
+	margin-right: 	5%;
+}
+
+div.col3R {
+	width:			30%;
+	float:			right;
+}
+
+div.col4  {
+	width:			21%;
+	float:			left;
+	margin-right: 	5%;
+}
+
+div.col4R {
+	width:			21%;
+	float:			right;
+}
+
+table.ordertable {
+	width: 			100%;
+	text-align: 	left;
+}
+
+div#getmembership {
+	width: 			60%;
+	border: 		1px solid black;
+	margin: 		auto;
+	padding: 		30px;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+div#navmenu {
+	background:		#a33;
+}
+
+a.navitem:hover {
+	background:		#d33;
+}
+
+img.icon {
+	margin-left:	20px;
+	cursor:			pointer;
+}
+
+table.admintable {
+	border-collapse:	collapse;
+	width: 				100%;
+}
+
+table.admintable th {
+	padding: 		5px;
+	border-bottom:	1px solid black;
+}
+
+table.admintable .tf {
+	font-weight:	bold;
+	padding:		5px;
+	border-top:		1px solid black;
+}
+
+table.admintable td {
+	padding:		5px;
+}
+
+tr.odd {
+	background:		#eee;
+}
+
+table.hover tbody tr {
+	cursor:			pointer;
+}
+
+table.hover tbody tr:hover {
+	background:		#ffd;
+}
+
+div#ubrowser {
+	max-height:		450px;
+	overflow-y:		auto;
+	border-top:		1px solid black;
+	border-bottom:	1px solid black;
+}
+
+input[type="text"][readonly] {
+   color:				#b1b1b1;
+   background-color:	#fafafa;
+   border:				1px solid #b1b1b1;
+}
+
+form#changeinfoform label {
+	margin-top:		15px;
+	margin-bottom:	3px;
+}
