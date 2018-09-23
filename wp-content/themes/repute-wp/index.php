@@ -3,7 +3,7 @@
 	<!-- BREADCRUMBS -->
 	<div class="page-header">
 		<div class="container">
-			<h1 class="page-title pull-left">Blog</h1>
+			<h1 class="page-title pull-left"><?php $currentlang = get_bloginfo('language'); if($currentlang==='nl'): ?>Nieuws<?php else: ?>News<?php endif; ?></h1>
 			<ol class="breadcrumb">
 				<?php 
 					if(function_exists('bcn_display')) {

@@ -7,9 +7,9 @@
 ;--------------------------------------------------------------------------------
 
 host				= "localhost"
-user				= "aspo_portal"
-password			= "ASPO#Portal"
-database			= "aspo_portal2"
+user				= "root"
+password			= "Vf1mjm3A"
+database			= "aspo_portal"
 
 ;--------------------------------------------------------------------------------
 ; General settings
