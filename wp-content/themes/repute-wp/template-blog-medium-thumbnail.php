@@ -21,7 +21,7 @@
 	<div class="page-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-md-12">
 				<?php
 					global $wp_query;
 
@@ -133,17 +133,17 @@
 					<?php wp_reset_query(); ?>
 
 				</div>
-				<div class="col-md-3">
+				<!--<div class="col-md-3">
 					<!-- SIDEBAR -->
 					<?php
-						if( function_exists( 'dynamic_sidebar' ) ){
+/*						if( function_exists( 'dynamic_sidebar' ) ){
 							if ( !dynamic_sidebar( 'tdv-page' ) && current_user_can('edit_theme_options') ) :
 								printf( __( 'Your theme supports sidebar, please go to Appearance &raquo <a href="%s">Widgets</a> in admin area.' ), admin_url('widgets.php') );
 							endif;
 						}
-					?>
+					*/?>
 					<!-- END SIDEBAR -->
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
