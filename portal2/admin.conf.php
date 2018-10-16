@@ -583,7 +583,7 @@
 			if(!isset($_GET['prid']))
 				throw new Exception('Geen congres opgegeven om te bekijken!');
 		
-			$stmt = $oDB->prepare('SELECT p.Description, p.Price, COUNT(o.OrderID) AS TimesSold
+			$stmt = $oDB->prepare('SELECT p.Description, p.Price, COUNT(o.OrderID) AS TimesSold, sum(CASE WHEN o.Diet="Vis" THEN 1 ELSE 0 END) AS Vis, sum(CASE WHEN o.Diet="Vlees" THEN 1 ELSE 0 END) AS Vlees, sum(CASE WHEN o.Diet="Vegetarisch" THEN 1 ELSE 0 END) AS Vegetarisch, sum(CASE WHEN o.Diet="Veganistisch" THEN 1 ELSE 0 END) AS Veganistisch
 								   FROM Packages AS p
 								   LEFT JOIN Orders AS o ON o.PackID = p.PackID
 								   AND o.TransStatus = "Success"
@@ -600,16 +600,28 @@
 			//calculate totals
 			$totsold = 0;
 			$totprice = 0;
+			$totVis = 0;
+			$totVlees = 0;
+			$totVegetarisch = 0;
+			$totVeganistisch = 0;
 			$pinfo = array();
 			foreach($packages as $p) {
 				//add to totals
 				$totsold += $p['TimesSold'];
 				$totprice += ($p['Price'] * $p['TimesSold']);
+				$totVis += $p['Vis'];
+				$totVlees += $p['Vlees'];
+				$totVegetarisch += $p['Vegetarisch'];
+				$totVeganistisch += $p['Veganistisch'];
 			}
 			
 			//assign package data to template
 			$oSmarty->assign('totsold', $totsold);
 			$oSmarty->assign('totprice', $totprice);	
+			$oSmarty->assign('totVis', $totVis);
+			$oSmarty->assign('totVlees', $totVlees);
+			$oSmarty->assign('totVegetarisch', $totVegetarisch);
+			$oSmarty->assign('totVeganistisch', $totVeganistisch);
 			$oSmarty->assign('pinfo', $packages);	
 		
 			//generate output

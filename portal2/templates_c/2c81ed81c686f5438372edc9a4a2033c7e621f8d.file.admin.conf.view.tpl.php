@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-09-22 00:17:26
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-12 18:17:36
          compiled from "templates/admin.conf.view.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:134327164754d5f5ec864468-58536957%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2c81ed81c686f5438372edc9a4a2033c7e621f8d' => 
     array (
       0 => 'templates/admin.conf.view.tpl',
-      1 => 1537564065,
+      1 => 1539361052,
       2 => 'file',
     ),
   ),
@@ -23,6 +23,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'p' => 0,
     'totprice' => 0,
     'totsold' => 0,
+    'totVis' => 0,
+    'totVlees' => 0,
+    'totVegetarisch' => 0,
+    'totVeganistisch' => 0,
     'phpself' => 0,
     'prid' => 0,
   ),
@@ -49,9 +53,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php if ($_smarty_tpl->tpl_vars['pinfo']->value){?>
 			<table class="admintable">
 				<tr>
-					<th width="60%">Beschrijving:</th>
+					<th width="40%">Beschrijving:</th>
 					<th width="20%" class="ar">Prijs:</th>
 					<th width="20%" class="ar">Aantal:</th>
+					<th width="10%" class="ar">Vis:</th>
+					<th width="10%" class="ar">Vlees:</th>
+					<th width="10%" class="ar">Vegetarisch:</th>
+					<th width="10%" class="ar">Veganistisch:</th>
 				</tr>
 			
 				<?php  $_smarty_tpl->tpl_vars['p'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['p']->_loop = false;
@@ -67,6 +75,14 @@ $_smarty_tpl->tpl_vars['p']->_loop = true;
 </td>
 						<td class="ar"><?php echo $_smarty_tpl->tpl_vars['p']->value['TimesSold'];?>
 </td>
+						<td class="ar"><?php echo $_smarty_tpl->tpl_vars['p']->value['Vis'];?>
+</td>
+						<td class="ar"><?php echo $_smarty_tpl->tpl_vars['p']->value['Vlees'];?>
+</td>
+						<td class="ar"><?php echo $_smarty_tpl->tpl_vars['p']->value['Vegetarisch'];?>
+</td>
+						<td class="ar"><?php echo $_smarty_tpl->tpl_vars['p']->value['Veganistisch'];?>
+</td>
 					</tr>
 				<?php } ?>
 
@@ -75,6 +91,14 @@ $_smarty_tpl->tpl_vars['p']->_loop = true;
 					<td class="ar">&euro; <?php echo $_smarty_tpl->tpl_vars['totprice']->value;?>
 </td>
 					<td class="ar"><?php echo $_smarty_tpl->tpl_vars['totsold']->value;?>
+</td>
+					<td class="ar"><?php echo $_smarty_tpl->tpl_vars['totVis']->value;?>
+</td>
+					<td class="ar"><?php echo $_smarty_tpl->tpl_vars['totVlees']->value;?>
+</td>
+					<td class="ar"><?php echo $_smarty_tpl->tpl_vars['totVegetarisch']->value;?>
+</td>
+					<td class="ar"><?php echo $_smarty_tpl->tpl_vars['totVeganistisch']->value;?>
 </td>
 				</tr>
 
@@ -114,4 +138,5 @@ $_smarty_tpl->tpl_vars['p']->_loop = true;
 </div>
 	
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
 <?php }} ?>

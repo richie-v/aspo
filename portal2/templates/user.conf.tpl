@@ -63,7 +63,17 @@
 							</div>
 						{/foreach}
 					{/if}
-					
+						<div class="diner">
+							<p>Eventuele Dieetvoorkeuren:</p>
+							<p><input type="radio" id="visRadio" name="diet" value="Vis"/>
+							<label for="visRadio" style="display: inline;">Vis</label></p>
+							 <p><input type="radio" id="vleesRadio" name="diet" value="Vlees"/>
+                                                        <label for="vleesRadio" style="display: inline;">Vlees</label></p>
+							 <p><input type="radio" id="vegRadio" name="diet" value="Vegetarisch"/>
+                                                        <label for="vegRadio" style="display: inline;">Vegetarisch</label></p>
+                                                        <p><input type="radio" id="vegaRadio" type="radio" name="diet" value="Veganistisch"/>
+							<label for="vegaRadio" style="display: inline;">Veganistisch</p>
+						</div>
 						<div class="ar">
 							<input type="submit" class="button white" value="Inschrijven" />
 						</div>

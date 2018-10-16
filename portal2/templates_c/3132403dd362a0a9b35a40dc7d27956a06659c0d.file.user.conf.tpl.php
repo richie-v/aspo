@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-10-11 17:36:43
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-12 17:11:31
          compiled from "templates/user.conf.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:214359981354d5f656e2b888-62668770%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3132403dd362a0a9b35a40dc7d27956a06659c0d' => 
     array (
       0 => 'templates/user.conf.tpl',
-      1 => 1507640650,
+      1 => 1539357089,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54d5f656eede98_20776554')) {function content_54d5f656eede98_20776554($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/home/aspo/public_html/portal2/includes/smarty/plugins/modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_54d5f656eede98_20776554')) {function content_54d5f656eede98_20776554($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/var/www/html/aspo/portal2/includes/smarty/plugins/modifier.date_format.php';
 ?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
@@ -119,7 +119,17 @@ $_smarty_tpl->tpl_vars['p']->_loop = true;
 							</div>
 						<?php } ?>
 					<?php }?>
-					
+						<div class="diner">
+							<p>Eventuele Dieetvoorkeuren:</p>
+							<p><input type="radio" id="visRadio" name="diet" value="Vis"/>
+							<label for="visRadio" style="display: inline;">Vis</label></p>
+							 <p><input type="radio" id="vleesRadio" name="diet" value="Vlees"/>
+                                                        <label for="vleesRadio" style="display: inline;">Vlees</label></p>
+							 <p><input type="radio" id="vegRadio" name="diet" value="Vegetarisch"/>
+                                                        <label for="vegRadio" style="display: inline;">Vegetarisch</label></p>
+                                                        <p><input type="radio" id="vegaRadio" type="radio" name="diet" value="Veganistisch"/>
+							<label for="vegaRadio" style="display: inline;">Veganistisch</p>
+						</div>
 						<div class="ar">
 							<input type="submit" class="button white" value="Inschrijven" />
 						</div>
@@ -140,4 +150,5 @@ $_smarty_tpl->tpl_vars['p']->_loop = true;
 </div>
 	
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
 <?php }} ?>

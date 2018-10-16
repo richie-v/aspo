@@ -48,40 +48,8 @@
 								<article class="entry-post">
 									<header class="entry-header">
 										<h2 class="entry-title"><a href="<?php get_permalink(); ?>"><?php the_title(); ?></a></h2>
-										<div class="meta-line clearfix">
-											<div class="meta-author-category pull-left">
-												<span class="post-author">by <?php the_author_link(); ?></span>
-												<span class="post-category">In: <?php echo get_the_category_list( ', ' ); ?></span>
-											</div>
-											<div class="meta-tag-comment pull-right">
-												<span class="post-tags"><i class="fa fa-tag"></i> <?php the_tags(); ?></span>
-												<span class="post-comment"><i class="fa fa-comments"></i>
-												<?php
-													comments_popup_link(
-														__( '0 Comment','repute' ),
-														__( '1 Comment','repute' ),
-														__( '% Comments','repute' ), '',
-														__( 'Comments are off','repute' )
-													);
-												?>
-												</span>
-											</div>
-										</div>
 									</header>
 									<div class="entry-content clearfix">
-										<figure class="featured-image">
-											<?php
-												$date = get_the_date( 'M,d,Y' );
-												$arr_date = explode( ',', $date );
-											?>
-											<div class="post-date-info clearfix"><span class="post-month"><?php echo $arr_date[0]; ?></span><span class="post-date"><?php echo $arr_date[1]; ?></span><span class="post-year"><?php echo $arr_date[2]; ?></span></div>
-											<?php if ( has_post_thumbnail() ) : 
-													$thumb_id = get_post_thumbnail_id( $post->ID ); 
-													$thumb_img = wp_get_attachment_image_src( $thumb_id , 'large' );
-											?>
-											<a href="<?php the_permalink(); ?>"><img src="<?php echo $thumb_img[0]; ?>" class="img-responsive" alt="<?php the_title() ?>"></a>
-											<?php endif; ?>
-										</figure>
 										<div class="content">
 											<?php the_excerpt(); ?>
 											<p class="read-more">
@@ -93,12 +61,6 @@
 								<!-- end blog post -->
 								<hr>
 							</div>
-							<!-- END BLOG -->
-							<?php elseif( $post->post_type == 'page' ) : ?>
-								<div class="page-result">
-									<h2 class="page-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-									<span class="badge">Page</span>
-								</div>
 							<?php endif; ?>
 						<?php endwhile; ?> 
 					
@@ -133,15 +95,6 @@
 					<?php endif; ?>
 
 					<?php wp_reset_query(); ?>
-				</div>
-				<div class="col-md-3">
-					<?php
-						if( function_exists( 'dynamic_sidebar' ) ){
-							if ( !dynamic_sidebar( 'tdv-page' ) && current_user_can( 'edit_theme_options' ) ) :
-								printf( __( 'Your theme supports sidebar, please go to Appearance &raquo <a href="%s">Widgets</a> in admin area.' ), admin_url( 'widgets.php' ) );
-							endif;
-						}
-					?>
 				</div>
 			</div>
 		</div>

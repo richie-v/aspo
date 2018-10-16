@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<!-- BREADCRUMBS -->
-	<div class="page-header">
+<div class="page-header">
 		<div class="container">
 			<h1 class="page-title pull-left"><?php $currentlang = get_bloginfo('language'); if($currentlang==='nl'): ?>Nieuws<?php else: ?>News<?php endif; ?></h1>
 			<ol class="breadcrumb">
@@ -24,57 +24,26 @@
 					<div class="blog full-thumbnail">
 
 					<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+                        <?php if (in_category(69) || in_category(71)) { ?>
 						<!-- blog post -->
 						<article class="entry-post">
 							<header class="entry-header">
 								<h2 class="entry-title">
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h2>
-								<div class="meta-line clearfix">
-									<div class="meta-author-category pull-left">
-										<span class="post-author">by <?php the_author_link(); ?></span>
-										<span class="post-category">In: <?php echo get_the_category_list( ', ' ); ?></span>
-									</div>
-									<div class="meta-tag-comment pull-right">
-										<span class="post-tags"><i class="fa fa-tag"></i> <?php the_tags(); ?></span>
-										<span class="post-comment"><i class="fa fa-comments"></i>
-										<?php
-											comments_popup_link(
-												__( '0 Comment','repute' ),
-												__( '1 Comment','repute' ),
-												__( '% Comments','repute' ), '',
-												__( 'Comments are off','repute' )
-											);
-										?>
-										</span>
-									</div>
-								</div>
 							</header>
 							<div class="entry-content clearfix">
-								<figure class="featured-image">
-									<?php
-										$date = get_the_date( 'M,d,Y' );
-										$arr_date = explode( ',', $date );
-									?>
-									<div class="post-date-info clearfix"><span class="post-month"><?php echo $arr_date[0]; ?></span><span class="post-date"><?php echo $arr_date[1]; ?></span><span class="post-year"><?php echo $arr_date[2]; ?></span></div>
-									<?php if ( has_post_thumbnail() ) {
-											$thumb_id = get_post_thumbnail_id( $post->ID ); 
-											$thumb_img = wp_get_attachment_image_src( $thumb_id , 'large' );
-										}
-									?>
-									<a href="<?php the_permalink(); ?>"><img src="<?php echo $thumb_img[0]; ?>" class="img-responsive" alt="<?php the_title() ?>"></a>
-								</figure>
 								<div class="content">
 									<?php the_excerpt(); ?>
 									<p class="read-more">
-										<a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More <i class="fa fa-long-arrow-right"></i></a>
+										<a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php $currentlang = get_bloginfo('language'); if($currentlang==='nl'): ?>LEES MEER<?php else: ?>READ MORE<?php endif ?> <i class="fa fa-long-arrow-right"></i></a>
 									</p>
 								</div>
 							</div>
 						</article>
 						<!-- end blog post -->
-
-						<hr>
+                            <hr>
+                        <?php } ?>
 					<?php endwhile; ?>
 					
 					</div>
@@ -119,7 +88,7 @@
 						}
 					*/?>
 					<!-- END SIDEBAR -->
-				</div>-->
+				</div>
 			</div>
 		</div>
 	</div>

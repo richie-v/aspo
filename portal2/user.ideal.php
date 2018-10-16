@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 	//check if included
 	if(!defined('PortalInc')) {
@@ -35,7 +35,7 @@
 			//check for package ID
 			if(!$_POST['packID'] || !is_numeric($_POST['packID']))
 				throw new Exception('Geen bestelling gekozen!');
-			
+
 			//query package data
 			$stmt = $oDB->prepare('SELECT PackID, Description, Price FROM Packages WHERE PackID = :packid');
 			$stmt->bindValue(':packid', $_POST['packID']);
@@ -75,6 +75,7 @@
 				throw new Exception('Er is een fout opgetreden met iDeal: ' . $error);
 			
 			//display issuers list
+			$oSmarty->assign('diet', $_POST['diet']);
 			$oSmarty->assign('package', $package);
 			$oSmarty->assign('issuerdata', $issuerdata);
 			$oSmarty->assign('title', 'iDeal betaling');
@@ -246,21 +247,23 @@
 			catch(SecurityException $e)      { $error = 'Authenticatie mislukt: ' . $e->getMessage(); }
 			catch(ValidationException $e)    { $error = 'Validatie mislukt: ' . $e->getMessage(); }
 			catch(iDEALException $e)         { $error = 'iDeal fout: ' . $e->getConsumerMessage(); }
-			catch(Exception $e)              { $error = 'iDeal fout: ' . $e->getMessage(); }
+			catch(Exception $e)              { $error = 'iDeal fout: ' . $e->getMessage(); } 
 
 			//display errors if any
 			if($error)
 				throw new Exception('Er is een fout opgetreden met iDeal: ' . $error);
 
 			//add order in database
-			$stmt = $oDB->prepare('INSERT INTO Orders (UserID, ProdID, PackID, PurchaseID, EntranceCode, TransID, TransTime) VALUES(?,?,?,?,?,?,?)');
+			$stmt = $oDB->prepare('INSERT INTO Orders (UserID, ProdID, PackID, PurchaseID, EntranceCode, TransID, TransTime, Diet) VALUES(?,?,?,?,?,?,?,?)');
 			$stmt->bindValue(1, $oSelf->userid);
 			$stmt->bindValue(2, $package['ProdID']);
 			$stmt->bindValue(3, $package['PackID']);
 			$stmt->bindValue(4, $purchaseID);
 			$stmt->bindValue(5, $entranceCode);
+			$stmt->bindValue(6, 3);
 			$stmt->bindValue(6, $response->getTransactionID());
 			$stmt->bindValue(7, date('Y-m-d H:i:s'));
+			$stmt->bindValue(8, $_POST['diet']);
 			
 			if(!$stmt->execute())
 				throw new Exception('Kan de bestelling niet afronden!');

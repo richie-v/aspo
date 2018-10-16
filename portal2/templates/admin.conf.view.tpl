@@ -16,9 +16,13 @@
 		{if $pinfo}
 			<table class="admintable">
 				<tr>
-					<th width="60%">Beschrijving:</th>
+					<th width="40%">Beschrijving:</th>
 					<th width="20%" class="ar">Prijs:</th>
 					<th width="20%" class="ar">Aantal:</th>
+					<th width="10%" class="ar">Vis:</th>
+					<th width="10%" class="ar">Vlees:</th>
+					<th width="10%" class="ar">Vegetarisch:</th>
+					<th width="10%" class="ar">Veganistisch:</th>
 				</tr>
 			
 				{foreach from=$pinfo item=p}
@@ -26,6 +30,10 @@
 						<td>{$p.Description}</td>
 						<td class="ar">&euro; {$p.Price}</td>
 						<td class="ar">{$p.TimesSold}</td>
+						<td class="ar">{$p.Vis}</td>
+						<td class="ar">{$p.Vlees}</td>
+						<td class="ar">{$p.Vegetarisch}</td>
+						<td class="ar">{$p.Veganistisch}</td>
 					</tr>
 				{/foreach}
 
@@ -33,6 +41,10 @@
 					<td>Totaal:</td>
 					<td class="ar">&euro; {$totprice}</td>
 					<td class="ar">{$totsold}</td>
+					<td class="ar">{$totVis}</td>
+					<td class="ar">{$totVlees}</td>
+					<td class="ar">{$totVegetarisch}</td>
+					<td class="ar">{$totVeganistisch}</td>
 				</tr>
 
 			</table>

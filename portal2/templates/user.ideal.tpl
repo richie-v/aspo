@@ -24,11 +24,10 @@
 			</div>
 			
 			<p>
-
 			<form action="{$phpself}?m=ideal&a=st" method="POST">
-		
 				Selecteer uw bank:
-				
+			
+				<input type="hidden" name="diet" value="{$diet}" />	
 				<input type="hidden" name="packID" value="{$package.PackID}" />
 
 				{html_options name=issuerID options=$issuerdata style="width: 50%;"}

@@ -227,9 +227,6 @@ function tdv_remove_empty_p( $content ) {
 add_filter('the_content', 'tdv_remove_empty_p', 10);
 
 function tdv_add_search_icon( $items, $args ) {
-	if ( $args->theme_location == 'topnav' ) {
-		$items .= '<li><a href="#" class="top-searchbox-toggle"><i class="fa fa-search"></i> <span class="sr-only">Search</span></a></li>';
-	}
 	
 	return $items;
 }

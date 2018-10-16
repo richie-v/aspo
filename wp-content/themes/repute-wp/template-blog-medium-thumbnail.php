@@ -45,10 +45,6 @@
 							<header class="entry-header">
 								<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<div class="meta-line clearfix">
-									<div class="meta-author-category pull-left">
-										<span class="post-author">by <?php the_author_link(); ?></span>
-										<span class="post-category">In: <?php echo get_the_category_list( ', ' ); ?></span>
-									</div>
 									<div class="meta-tag-comment pull-right">
 										<span class="post-tags"><i class="fa fa-tag"></i> <?php the_tags(); ?></span>
 										<span class="post-comment"><i class="fa fa-comments"></i>
@@ -57,7 +53,7 @@
 												__( '0 Comment','repute' ),
 												__( '1 Comment','repute' ),
 												__( '% Comments','repute' ), '',
-												__( 'Comments are off','repute' ) 
+												__( 'Comments are off','repute' )
 											);
 										?>
 										</span>

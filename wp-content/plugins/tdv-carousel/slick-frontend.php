@@ -187,7 +187,7 @@ function slickc_frontend($attributes) {
 									<h2 class="hero-heading animation-delay-5" data-animation="animated fadeIn"><?php echo $image['title']; ?></h2>
 									<p class="lead animation-delay-7" data-animation="animated fadeIn"><?php echo $image['content']; ?></p>
 								</div>
-								<a href="<?php echo $image['url']; ?>" class="btn btn-info btn-lg hero-button animation-delay-12" data-animation="animated fadeIn">LEARN MORE</a>
+								<a href="<?php echo $image['url']; ?>" class="btn btn-info btn-lg hero-button animation-delay-12" data-animation="animated fadeIn"><?php $currentlang = get_bloginfo('language'); if($currentlang==='nl'): ?>LEES MEER<?php else: ?>LEARN MORE<?php endif ?></a>
 							</div>
 							<div class="hero-right pull-right">
 								<img src="<?php echo $image['img_src'] ?>" class="animation-delay-9" data-animation="animated fadeInRight" alt="<?php echo esc_html($image['title']) ?>">

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-10-18 20:48:20
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-12 15:40:10
          compiled from "templates/admin.conf.edit.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1413747274559cf695a544b3-76231238%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'aad36df1c8693b332031bd416d085d213fe5d301' => 
     array (
       0 => 'templates/admin.conf.edit.tpl',
-      1 => 1507640648,
+      1 => 1537541467,
       2 => 'file',
     ),
   ),
@@ -35,7 +35,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_559cf695b28d69_28607362')) {function content_559cf695b28d69_28607362($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/home/aspo/public_html/portal2/includes/smarty/plugins/function.cycle.php';
+<?php if ($_valid && !is_callable('content_559cf695b28d69_28607362')) {function content_559cf695b28d69_28607362($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/var/www/html/aspo/portal2/includes/smarty/plugins/function.cycle.php';
 ?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
