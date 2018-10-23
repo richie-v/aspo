@@ -25,51 +25,7 @@
             <div class="col-md-4">
                 <!-- COLUMN 3 -->
                 <?php
-                $currentlang = get_bloginfo('language');
-                if ($currentlang == "nl"):
-                    ?>
-                    <div class="newsletter">
-                        <h3 class="footer-heading">Nieuwsbrief</h3>
-                        <p>Blijf op de hoogte door u aan te melden op onze nieuwsletter.</p>
-                        <!--                            <p>Get the latest update from us by subscribing to our newsletter.</p>-->
-                        <form class="newsletter-form" method="POST">
-
-                            <?php $nonce = wp_create_nonce("subscribe_newsletter_nonce"); ?>
-
-                            <div class="input-group input-group-lg">
-                                <input type="email" class="form-control" name="email" placeholder="voorbeeld@email.com">
-                                <span class="input-group-btn"><button class="btn btn-primary" type="button"
-                                                                      id="btn-subscribe-newsletter"
-                                                                      data-nonce="<?php echo $nonce; ?>"><i
-                                                class="fa fa-spinner fa-spin"></i><span>Aanmelden</span></button></span>
-                            </div>
-                            <div class="alert"></div>
-
-                        </form>
-                    </div>
-                <?php
-                else :
-                    ?>
-                    <div class="newsletter">
-                        <h3 class="footer-heading">Newsletter</h3>
-                        <p>Stay up-to-date by subscribing to our newsletter.</p>
-                        <!--                            <p>Get the latest update from us by subscribing to our newsletter.</p>-->
-                        <form class="newsletter-form" method="POST">
-
-                            <?php $nonce = wp_create_nonce("subscribe_newsletter_nonce"); ?>
-
-                            <div class="input-group input-group-lg">
-                                <input type="email" class="form-control" name="email" placeholder="voorbeeld@email.com">
-                                <span class="input-group-btn"><button class="btn btn-primary" type="button"
-                                                                      id="btn-subscribe-newsletter"
-                                                                      data-nonce="<?php echo $nonce; ?>"><i
-                                                class="fa fa-spinner fa-spin"></i><span>Subscribe</span></button></span>
-                            </div>
-                            <div class="alert"></div>
-
-                        </form>
-                    </div>
-                <?php endif; ?>
+                $currentlang = get_bloginfo('language'); ?>
                 <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('footer-right')) : else : ?>
                 <?php endif; ?>
                 <!-- END COLUMN 3 -->
