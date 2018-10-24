@@ -24,8 +24,7 @@
 					<div class="blog full-thumbnail">
 					<?php
                     global $wp_query;
-                    $args = array_merge( $wp_query->query_vars, array( 'post_type' => 'news' ) );
-                    query_posts( $args );
+                    query_posts( 'cat=69|cat=71' );
                     if( have_posts() ) : while( have_posts() ) : the_post(); ?>
                         <?php if (in_category(69) || in_category(71)) { ?>
 						<!-- blog post -->
