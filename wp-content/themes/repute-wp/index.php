@@ -22,10 +22,7 @@
 				<div class="col-md-12">
 					<!-- BLOG -->
 					<div class="blog full-thumbnail">
-					<?php
-                    global $wp_query;
-                    query_posts( 'cat=69|cat=71' );
-                    if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+					<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
                         <?php if (in_category(69) || in_category(71)) { ?>
 						<!-- blog post -->
 						<article class="entry-post">
