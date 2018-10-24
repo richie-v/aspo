@@ -22,9 +22,15 @@
 				<div class="col-md-12">
 					<!-- BLOG -->
 					<div class="blog full-thumbnail">
+                        <?php
+                        $args = array(
+                            'numberposts' => 100
+                        );
 
-					<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-
+                        $latest_posts = get_posts( $args );
+                        ?>
+					<?php if( have_posts() ) : while( have_posts($latest_posts) ) : the_post(); ?>
+                        <?php if (in_category(69) || in_category(71)) { ?>
 						<!-- blog post -->
 						<article class="entry-post">
 							<header class="entry-header">
@@ -43,7 +49,7 @@
 						</article>
 						<!-- end blog post -->
                             <hr>
-                        
+                        <?php } ?>
 					<?php endwhile; ?>
 					
 					</div>
