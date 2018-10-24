@@ -22,15 +22,11 @@
 				<div class="col-md-12">
 					<!-- BLOG -->
 					<div class="blog full-thumbnail">
-                        <?php
-                        $args = array(
-                            'numberposts' => 100,
-                            'post_type' => 'news'
-                        );
-
-                        $latest_posts = get_posts( $args );
-                        ?>
-					<?php if( have_posts() ) : while( $latest_posts ) : the_post(); ?>
+					<?php
+                    global $wp_query;
+                    $args = array_merge( $wp_query->query_vars, array( 'post_type' => 'news' ) );
+                    query_posts( $args );
+                    if( have_posts() ) : while( have_posts() ) : the_post(); ?>
                         <?php if (in_category(69) || in_category(71)) { ?>
 						<!-- blog post -->
 						<article class="entry-post">
