@@ -24,12 +24,13 @@
 					<div class="blog full-thumbnail">
                         <?php
                         $args = array(
-                            'numberposts' => 100
+                            'numberposts' => 100,
+                            'post_type' => 'news'
                         );
 
                         $latest_posts = get_posts( $args );
                         ?>
-					<?php if( have_posts() ) : while( have_posts($latest_posts) ) : the_post(); ?>
+					<?php if( have_posts() ) : while( $latest_posts ) : the_post(); ?>
                         <?php if (in_category(69) || in_category(71)) { ?>
 						<!-- blog post -->
 						<article class="entry-post">
