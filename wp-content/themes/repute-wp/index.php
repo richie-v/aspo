@@ -23,7 +23,7 @@
 					<!-- BLOG -->
 					<div class="blog full-thumbnail">
 					<?php
-                    $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
+                    $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); 
                     if( $wpb_all_query->have_posts() ) : while( $wpb_all_query->have_posts() ) : the_post(); ?>
                         <?php if (in_category(69) || in_category(71)) { ?>
 						<!-- blog post -->
