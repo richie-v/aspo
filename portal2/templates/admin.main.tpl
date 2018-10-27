@@ -9,7 +9,7 @@
 	{include file="navmenu.tpl"}
 
 	<div id="content">
-		<h2>Welkom {$user}!</h2>
+		<h2>Welcome {$user}!</h2>
 		
 		<p>U bent ingelogd als beheerder. U kunt in dit systeem de volgende zaken beheren:</p>
 		

@@ -10,7 +10,7 @@
 
 	<div id="content">
 	
-		<h2>Lidmaatschap</h2>
+		<h2>Membership</h2>
 		
 		<p>
 
@@ -21,8 +21,7 @@
 	{else}
 
 		{if !$membership}
-		
-			Op deze pagina kunt u lid worden van de ASPO. Het lidmaatschap is geldig van <b>1 januari tot 31 december</b>. Door lid te worden steunt u de ASPO, ontvangt u de nieuwsbrief en krijgt u toegang tot symposia die door de ASPO georganiseerd worden.
+			Here you can apply for ASPO membership. Membership runs from January 1 to December 31. By becoming a member you support the ASPO, receive the newsletter, and have access to symposia organized by the ASPO. 
 		
 		{else if $membership < $curryear}
 
@@ -35,7 +34,7 @@
 		{/if}
 
 		<p>
-		<div class="notification">Let op: U kunt ook lid worden door u op te geven voor het jaarlijkse ASPO-congres. U krijgt het ASPO-lidmaatschap gratis bij de inschrijving voor het congres. Het congres wordt in december gehouden.</div>
+		<div class="notification"><b>IMPORTANT NOTE:</b> You can also become a member by attending the annual ASPO conference. The ASPO conference fee includes a free ASPO membership.  </div>
 		
 	{/if}
 		

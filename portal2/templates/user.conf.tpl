@@ -10,9 +10,8 @@
 
 	<div id="content">
 		
-		<h2>Congres</h2>
-		
-		<p>Het ASPO houdt jaarlijks een congres in december. Op deze pagina kunt u zich inschrijven voor dit congres.</p>
+		<h2>Conference</h2>
+		<p>On this page, you can register for the annual ASPO conference in December.</p>
 		
 		{if $position != 'Student'}
 			<div class="notification">Let op: De kosten van het congres zijn altijd inclusief het ASPO lidmaatschap voor het daarop volgend jaar.</div>

@@ -10,9 +10,9 @@
 
 	<div id="content">
 		
-		<h2>Betalingsoverzicht</h2>
-		
-		<p>Hieronder ziet u een overzicht van alle betalingen die u aan de ASPO heeft gedaan:</p>
+		<h2>Payment overview</h2>
+	
+		<p>Below you see an overview of all payments you have made to the ASPO.</p>	
 		
 		<p>&nbsp;</p>
 		
