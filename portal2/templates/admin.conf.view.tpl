@@ -22,7 +22,6 @@
 					<th width="10%" class="ar">Vis:</th>
 					<th width="10%" class="ar">Vlees:</th>
 					<th width="10%" class="ar">Vegetarisch:</th>
-					<th width="10%" class="ar">Veganistisch:</th>
 				</tr>
 			
 				{foreach from=$pinfo item=p}
@@ -33,7 +32,6 @@
 						<td class="ar">{$p.Vis}</td>
 						<td class="ar">{$p.Vlees}</td>
 						<td class="ar">{$p.Vegetarisch}</td>
-						<td class="ar">{$p.Veganistisch}</td>
 					</tr>
 				{/foreach}
 
@@ -44,7 +42,6 @@
 					<td class="ar">{$totVis}</td>
 					<td class="ar">{$totVlees}</td>
 					<td class="ar">{$totVegetarisch}</td>
-					<td class="ar">{$totVeganistisch}</td>
 				</tr>
 
 			</table>

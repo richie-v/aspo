@@ -70,8 +70,7 @@
                                                         <label for="vleesRadio" style="display: inline;">Vlees</label></p>
 							 <p><input type="radio" id="vegRadio" name="diet" value="Vegetarisch"/>
                                                         <label for="vegRadio" style="display: inline;">Vegetarisch</label></p>
-                                                        <p><input type="radio" id="vegaRadio" type="radio" name="diet" value="Veganistisch"/>
-							<label for="vegaRadio" style="display: inline;">Veganistisch</p>
+							<p>If you have other preferences (eg allergies), please contact the organisers, <a style="color:blue" href="mailto:aspo.nijmegen2018@gmail.com">aspo.nijmegen2018@gmail.com</a></p>
 						</div>
 						<div class="ar">
 							<input type="submit" class="button white" value="Inschrijven" />

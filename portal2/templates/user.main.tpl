@@ -9,7 +9,9 @@
 	{include file="navmenu.tpl"}
 
 	<div id="content">
-		<h2>Welkom {$user.Username}!</h2>
+		<h2>Welcome {$user.Username}!</h2>
+		
+		<p>Below your personal details. Please check if this information is correct. If incorrect, change your details <a href="{$phpself}?m=main&a=changeinfo">here</a>.</p>
 		
 		<p>Hieronder staan uw persoonlijke gegevens. Controleer of deze gegevens kloppen want deze zijn van belang bij het inschrijven voor congressen! Als de gegevens niet kloppen, kunt u <a href="{$phpself}?m=main&a=changeinfo">hier</a> uw gegevens wijzigen.</p>
 		
