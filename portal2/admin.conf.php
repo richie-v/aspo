@@ -603,7 +603,6 @@
 			$totVis = 0;
 			$totVlees = 0;
 			$totVegetarisch = 0;
-			$totVeganistisch = 0;
 			$pinfo = array();
 			foreach($packages as $p) {
 				//add to totals
@@ -612,7 +611,6 @@
 				$totVis += $p['Vis'];
 				$totVlees += $p['Vlees'];
 				$totVegetarisch += $p['Vegetarisch'];
-				$totVeganistisch += $p['Veganistisch'];
 			}
 			
 			//assign package data to template
@@ -621,7 +619,6 @@
 			$oSmarty->assign('totVis', $totVis);
 			$oSmarty->assign('totVlees', $totVlees);
 			$oSmarty->assign('totVegetarisch', $totVegetarisch);
-			$oSmarty->assign('totVeganistisch', $totVeganistisch);
 			$oSmarty->assign('pinfo', $packages);	
 		
 			//generate output
