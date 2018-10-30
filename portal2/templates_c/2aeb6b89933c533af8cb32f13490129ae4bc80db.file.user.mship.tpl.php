@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-10-12 15:54:15
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-30 09:40:46
          compiled from "templates/user.mship.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:104292961154d5f658636673-50632078%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2aeb6b89933c533af8cb32f13490129ae4bc80db' => 
     array (
       0 => 'templates/user.mship.tpl',
-      1 => 1537541467,
+      1 => 1540644050,
       2 => 'file',
     ),
   ),
@@ -41,7 +41,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 	<div id="content">
 	
-		<h2>Lidmaatschap</h2>
+		<h2>Membership</h2>
 		
 		<p>
 
@@ -52,8 +52,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<?php }else{ ?>
 
 		<?php if (!$_smarty_tpl->tpl_vars['membership']->value){?>
-		
-			Op deze pagina kunt u lid worden van de ASPO. Het lidmaatschap is geldig van <b>1 januari tot 31 december</b>. Door lid te worden steunt u de ASPO, ontvangt u de nieuwsbrief en krijgt u toegang tot symposia die door de ASPO georganiseerd worden.
+			Here you can apply for ASPO membership. Membership runs from January 1 to December 31. By becoming a member you support the ASPO, receive the newsletter, and have access to symposia organized by the ASPO. 
 		
 		<?php }elseif($_smarty_tpl->tpl_vars['membership']->value<$_smarty_tpl->tpl_vars['curryear']->value){?>
 
@@ -66,7 +65,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php }?>
 
 		<p>
-		<div class="notification">Let op: U kunt ook lid worden door u op te geven voor het jaarlijkse ASPO-congres. U krijgt het ASPO-lidmaatschap gratis bij de inschrijving voor het congres. Het congres wordt in december gehouden.</div>
+		<div class="notification"><b>IMPORTANT NOTE:</b> You can also become a member by attending the annual ASPO conference. The ASPO conference fee includes a free ASPO membership.  </div>
 		
 	<?php }?>
 		
@@ -98,4 +97,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div>
 
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
 <?php }} ?>

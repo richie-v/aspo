@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-10-12 17:11:31
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-30 14:27:00
          compiled from "templates/user.conf.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:214359981354d5f656e2b888-62668770%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3132403dd362a0a9b35a40dc7d27956a06659c0d' => 
     array (
       0 => 'templates/user.conf.tpl',
-      1 => 1539357089,
+      1 => 1540906017,
       2 => 'file',
     ),
   ),
@@ -42,9 +42,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 	<div id="content">
 		
-		<h2>Congres</h2>
-		
-		<p>Het ASPO houdt jaarlijks een congres in december. Op deze pagina kunt u zich inschrijven voor dit congres.</p>
+		<h2>Conference</h2>
+		<p>On this page, you can register for the annual ASPO conference in December.</p>
 		
 		<?php if ($_smarty_tpl->tpl_vars['position']->value!='Student'){?>
 			<div class="notification">Let op: De kosten van het congres zijn altijd inclusief het ASPO lidmaatschap voor het daarop volgend jaar.</div>
@@ -87,15 +86,14 @@ $_smarty_tpl->tpl_vars['pr']->_loop = true;
 					<br />
 
 					<form action="<?php echo $_smarty_tpl->tpl_vars['phpself']->value;?>
-?m=ideal" method="POST" data-validate="parsley" data-show-errors="false">
-					
-					<?php if (count($_smarty_tpl->tpl_vars['pr']->value['packages'])==1){?>
+?m=ideal" method="POST" data-validate="parsley" data-show-errors="false">	
+					<?php if (!is_array($_smarty_tpl->tpl_vars['pr']->value['packages'])){?>
 						<div class="package">
 							<input type="hidden" name="packID" value="<?php echo $_smarty_tpl->tpl_vars['pr']->value['packages'][0]['PackID'];?>
 " />
-							<?php echo $_smarty_tpl->tpl_vars['pr']->value['packages'][0]['Description'];?>
+							<?php echo $_smarty_tpl->tpl_vars['pr']->value['packages']['Description'];?>
 
-							<div class="fr">Prijs: &euro; <?php echo $_smarty_tpl->tpl_vars['pr']->value['packages'][0]['Price'];?>
+							<div class="fr">Price: &euro; <?php echo $_smarty_tpl->tpl_vars['pr']->value['packages'][0]['Price'];?>
 </div>
 							<br style="clear: both" />
 						</div>
@@ -114,21 +112,20 @@ $_smarty_tpl->tpl_vars['p']->_loop = true;
 								<label for="packID<?php echo $_smarty_tpl->getVariable('smarty')->value['foreach']['packloop']['index'];?>
 " style="display: inline;"><?php echo $_smarty_tpl->tpl_vars['p']->value['Description'];?>
 </label>
-								<div class="fr">Prijs: &euro; <?php echo $_smarty_tpl->tpl_vars['p']->value['Price'];?>
+								<div class="fr">Price: &euro; <?php echo $_smarty_tpl->tpl_vars['p']->value['Price'];?>
 </div>
 							</div>
 						<?php } ?>
 					<?php }?>
 						<div class="diner">
-							<p>Eventuele Dieetvoorkeuren:</p>
+							<p>Any dietary preferences:</p>
 							<p><input type="radio" id="visRadio" name="diet" value="Vis"/>
-							<label for="visRadio" style="display: inline;">Vis</label></p>
+							<label for="visRadio" style="display: inline;">Fish</label></p>
 							 <p><input type="radio" id="vleesRadio" name="diet" value="Vlees"/>
-                                                        <label for="vleesRadio" style="display: inline;">Vlees</label></p>
+                                                        <label for="vleesRadio" style="display: inline;">Meat</label></p>
 							 <p><input type="radio" id="vegRadio" name="diet" value="Vegetarisch"/>
-                                                        <label for="vegRadio" style="display: inline;">Vegetarisch</label></p>
-                                                        <p><input type="radio" id="vegaRadio" type="radio" name="diet" value="Veganistisch"/>
-							<label for="vegaRadio" style="display: inline;">Veganistisch</p>
+                                                        <label for="vegRadio" style="display: inline;">Vegetarian</label></p>
+							<p>If you have other preferences (eg allergies), please contact the organisers, <a style="color:blue" href="mailto:aspo.nijmegen2018@gmail.com">aspo.nijmegen2018@gmail.com</a></p>
 						</div>
 						<div class="ar">
 							<input type="submit" class="button white" value="Inschrijven" />

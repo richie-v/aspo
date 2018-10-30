@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-09-22 00:16:40
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-27 19:32:35
          compiled from "templates/admin.main.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:202102569854d5f5e7422263-43740527%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'edee50222dae6857a79d0dd12896277b6f169912' => 
     array (
       0 => 'templates/admin.main.tpl',
-      1 => 1537564065,
+      1 => 1540644050,
       2 => 'file',
     ),
   ),
@@ -37,7 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 	<div id="content">
-		<h2>Welkom <?php echo $_smarty_tpl->tpl_vars['user']->value;?>
+		<h2>Welcome <?php echo $_smarty_tpl->tpl_vars['user']->value;?>
 !</h2>
 		
 		<p>U bent ingelogd als beheerder. U kunt in dit systeem de volgende zaken beheren:</p>
@@ -65,4 +65,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </div>
 	
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
 <?php }} ?>

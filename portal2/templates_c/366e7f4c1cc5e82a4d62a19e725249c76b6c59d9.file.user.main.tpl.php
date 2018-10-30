@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-10-12 15:54:05
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-30 14:24:30
          compiled from "templates/user.main.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:131802291454d5f617d3a6b4-00050749%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '366e7f4c1cc5e82a4d62a19e725249c76b6c59d9' => 
     array (
       0 => 'templates/user.main.tpl',
-      1 => 1537541467,
+      1 => 1540905854,
       2 => 'file',
     ),
   ),
@@ -37,8 +37,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 	<div id="content">
-		<h2>Welkom <?php echo $_smarty_tpl->tpl_vars['user']->value['Username'];?>
+		<h2>Welcome <?php echo $_smarty_tpl->tpl_vars['user']->value['Username'];?>
 !</h2>
+		
+		<p>Below your personal details. Please check if this information is correct. If incorrect, change your details <a href="<?php echo $_smarty_tpl->tpl_vars['phpself']->value;?>
+?m=main&a=changeinfo">here</a>.</p>
 		
 		<p>Hieronder staan uw persoonlijke gegevens. Controleer of deze gegevens kloppen want deze zijn van belang bij het inschrijven voor congressen! Als de gegevens niet kloppen, kunt u <a href="<?php echo $_smarty_tpl->tpl_vars['phpself']->value;?>
 ?m=main&a=changeinfo">hier</a> uw gegevens wijzigen.</p>
@@ -77,7 +80,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 				<p>
 
-				<b>Dieetvoorkeuren:</b><br />
+				<b>Dietary preferences:</b><br />
 				<?php if ($_smarty_tpl->tpl_vars['user']->value['Diet']){?>
 					<?php echo $_smarty_tpl->tpl_vars['user']->value['Diet'];?>
 
@@ -155,4 +158,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </div>
 	
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
 <?php }} ?>

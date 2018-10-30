@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-10-12 15:44:32
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-26 10:49:21
          compiled from "templates/login.forget.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:99512135254e3d9902fdaf8-78803003%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '06589acd1b5050a17ece61c91d5badb2a4bd587a' => 
     array (
       0 => 'templates/login.forget.tpl',
-      1 => 1537541467,
+      1 => 1537564065,
       2 => 'file',
     ),
   ),

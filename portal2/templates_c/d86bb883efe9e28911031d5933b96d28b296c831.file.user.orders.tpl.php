@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-10-12 15:54:12
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-29 08:33:27
          compiled from "templates/user.orders.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:146347261054d5f655728650-00638603%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd86bb883efe9e28911031d5933b96d28b296c831' => 
     array (
       0 => 'templates/user.orders.tpl',
-      1 => 1537541467,
+      1 => 1540644050,
       2 => 'file',
     ),
   ),
@@ -39,9 +39,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 	<div id="content">
 		
-		<h2>Betalingsoverzicht</h2>
-		
-		<p>Hieronder ziet u een overzicht van alle betalingen die u aan de ASPO heeft gedaan:</p>
+		<h2>Payment overview</h2>
+	
+		<p>Below you see an overview of all payments you have made to the ASPO.</p>	
 		
 		<p>&nbsp;</p>
 		
@@ -90,4 +90,5 @@ if (!$_smarty_tpl->tpl_vars['i']->_loop) {
 </div>
 	
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
 <?php }} ?>

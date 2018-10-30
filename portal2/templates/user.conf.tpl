@@ -44,13 +44,12 @@
 						
 					<br />
 
-					<form action="{$phpself}?m=ideal" method="POST" data-validate="parsley" data-show-errors="false">
-					
-					{if count($pr.packages) == 1}
+					<form action="{$phpself}?m=ideal" method="POST" data-validate="parsley" data-show-errors="false">	
+					{if !is_array($pr.packages)}
 						<div class="package">
 							<input type="hidden" name="packID" value="{$pr.packages[0].PackID}" />
-							{$pr.packages[0].Description}
-							<div class="fr">Prijs: &euro; {$pr.packages[0].Price}</div>
+							{$pr.packages.Description}
+							<div class="fr">Price: &euro; {$pr.packages[0].Price}</div>
 							<br style="clear: both" />
 						</div>
 					{else}
@@ -58,18 +57,18 @@
 							<div class="package">
 								<input type="radio" id="packID{$smarty.foreach.packloop.index}" name="packID" value="{$p.PackID}" data-required="true" />
 								<label for="packID{$smarty.foreach.packloop.index}" style="display: inline;">{$p.Description}</label>
-								<div class="fr">Prijs: &euro; {$p.Price}</div>
+								<div class="fr">Price: &euro; {$p.Price}</div>
 							</div>
 						{/foreach}
 					{/if}
 						<div class="diner">
-							<p>Eventuele dieetvoorkeuren:</p>
+							<p>Any dietary preferences:</p>
 							<p><input type="radio" id="visRadio" name="diet" value="Vis"/>
-							<label for="visRadio" style="display: inline;">Vis</label></p>
+							<label for="visRadio" style="display: inline;">Fish</label></p>
 							 <p><input type="radio" id="vleesRadio" name="diet" value="Vlees"/>
-                                                        <label for="vleesRadio" style="display: inline;">Vlees</label></p>
+                                                        <label for="vleesRadio" style="display: inline;">Meat</label></p>
 							 <p><input type="radio" id="vegRadio" name="diet" value="Vegetarisch"/>
-                                                        <label for="vegRadio" style="display: inline;">Vegetarisch</label></p>
+                                                        <label for="vegRadio" style="display: inline;">Vegetarian</label></p>
 							<p>If you have other preferences (eg allergies), please contact the organisers, <a style="color:blue" href="mailto:aspo.nijmegen2018@gmail.com">aspo.nijmegen2018@gmail.com</a></p>
 						</div>
 						<div class="ar">

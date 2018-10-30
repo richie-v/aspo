@@ -8,7 +8,7 @@
 
 host				= "localhost"
 user				= "root"
-password			= "root"
+password			= "Vf1mjm3A"
 database			= "aspo_portal"
 
 ;--------------------------------------------------------------------------------

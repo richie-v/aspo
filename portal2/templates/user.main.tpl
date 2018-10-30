@@ -42,7 +42,7 @@
 
 				<p>
 
-				<b>Dieetvoorkeuren:</b><br />
+				<b>Dietary preferences:</b><br />
 				{if $user.Diet}
 					{$user.Diet}
 				{else}

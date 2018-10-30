@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2015-08-04 11:44:03
+<?php /* Smarty version Smarty-3.1.12, created on 2018-10-26 11:58:43
          compiled from "templates/admin.conf.mail.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:62271434255c08963600cf0-70504726%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '96fa64d8cb59b9c5386e5ba64e4a6a3f9881b258' => 
     array (
       0 => 'templates/admin.conf.mail.tpl',
-      1 => 1423308205,
+      1 => 1537564065,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_55c08963669459_94490412',
   'variables' => 
   array (
     'phpself' => 0,
     'prid' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_55c08963669459_94490412',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55c08963669459_94490412')) {function content_55c08963669459_94490412($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
